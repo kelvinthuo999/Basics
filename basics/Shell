@@ -2,3 +2,61 @@
 
 - A shell is a program that takes commands from the standard input and gives them to the operating system to perform.
 - A terminal is a program that opens a window and allows a user to interact with the shell.
+				
+				SHELL CHEATSHEET
+cd [path]  :  change your current directory to the specified one
+cd ~  :  go to your home folder
+cd -  :  go the the folder you were before
+ls  :  list the contents of the directory
+ls -lh
+list the contents of the directory in a human-­fri­endly format
+cp [origin] [desti­nation]
+copies the given file wherever you want to
+mv [origin] [desti­nation]
+moves or renames the given file
+pwd
+get the current directory you're in
+mkdir [name]
+create a folder
+mkdir -p [name]
+create a folder and all its parents, if needed
+chmod 755 [name]
+change a file's permis­sions - Allows the user to read, write and execute, and anyone else to just read and execute
+chmod 400 [name]
+change a file's permis­sions - Only the owner will be able to read the file
+chown user:group [name]
+changes the owners of a given file or folder
+chown -R user:group [name]
+changes the owners of a given file or folder, and all of its contents
+touch [name]
+creates a file with the given name
+file [name]
+reports the file type
+rm [file]
+removes a file
+rm -rf [file]
+removes a folder and all of its contents
+cat [file]
+prints a file's contents
+tac [file]
+prints a file's contents from bottom to top
+sed
+allows replacing of contents in files with regular expres­sions
+grep [pattern] [file]
+prints the contents of a given file that match the given pattern
+tr -s [pattern]
+replaces all concurrent duplicates of a given pattern
+tr [pattern] [repla­cement]  :  replaces the given pattern with the given replac­ement string
+tr -d [pattern]  :  removes the given pattern from a string
+head [file]  :  prints the first lines of a given file
+tail [file]  :  prints the last lines of a given file
+cut -f [field] -d [separ­ator]  :  allows you to print specific fields from an origin that have a given separator
+uname  :  gets the OS kernel's name (Linux, Darwin...)
+uname -m  :  gets the machine's archit­ecture (if not within an emulator)
+uname -r  :  gets the kernel version
+uname -a  :  shows all the details of your UNIX OS
+less [file]  :  prints a file using pagination
+more [file]  :  same as less [file]
+ln -s [source] [desti­nation]  :  makes a symbolic link of a given source at the given destin­ation
+cal  :  prints a calendar on the terminal
+date  :  reports the current date and time
